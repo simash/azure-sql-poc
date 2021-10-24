@@ -27,6 +27,11 @@ public class SpringbootAzuresqlApplication {
         return repository.findAll();
     }
 
+    @GetMapping("/myapp")
+    public String getStatus(){
+        return "Simash second app on azure cloud is up and running";
+    }
+
 
     public static void main(String[] args) {
         SpringApplication.  run(SpringbootAzuresqlApplication.class, args);
